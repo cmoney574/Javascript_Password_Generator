@@ -14,9 +14,9 @@ function generatePassword(){
   var pwordUpper = window.confirm("Should your password include upper case characters?");
   var pwordNumeric = window.confirm("Should your password contain numbers?");
   var pwordSpecial = window.confirm("Should your password contain special characters?");
-  var pchar;
+  var pchar ="";
   if(pwordLower){
-  pchar= "abcdefghijklmnopqrstuvwxyz"
+  pchar= pchar.concat("abcdefghijklmnopqrstuvwxyz")
   }
   if(pwordUpper){
     pchar= pchar.concat("ABCDEFGHIJKLMNOPQRSTUVWXYZ");
